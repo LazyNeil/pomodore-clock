@@ -1,0 +1,66 @@
+:root {
+  --bg-color: #140F2D;
+  --title-color: #97A7B3;
+  --color1: #33658a;
+  --color1-hover: #3F88C5;
+  --color2: #F49D37; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  text-align: center;
+  font-size: clamp(10px, 4vw, 22px);
+  color: var(--color2);
+  background-color: var(--bg-color); }
+
+.app {
+  height: 100vh;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*   border: 1px solid red; */ }
+
+.app-title {
+  padding: 2em 0;
+  color: var(--title-color); }
+
+.controls {
+  flex-direction: column;
+  align-items: center;
+  /*   border: 1px dotted blue; */ }
+
+.clock {
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0; }
+
+#break-label, #session-label {
+  padding: 1em 0; }
+
+.time-length {
+  padding: 1em 1.5em; }
+
+.btn {
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+  padding: .5rem 1.5rem;
+  border-radius: 1em;
+  background-color: var(--color1); }
+
+.btn:hover {
+  background-color: var(--color1-hover); }
+
+.btn-left {
+  border-radius: 1em 0em 0em 1em; }
+
+.btn-right {
+  border-radius: 0em 1em 1em 0em; }
